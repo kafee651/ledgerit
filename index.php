@@ -14,7 +14,7 @@
 <meta name="robots" content="index, follow, noarchive" />
 <meta name="googlebot" content="noarchive" />
 
-<link rel="stylesheet" type="text/css" media="screen" href="../new site/css/screen.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="../my_website/css/screen.css" />
 
 </head>
 
@@ -25,7 +25,7 @@
 
 	<!--header -->
 	<div id="header">			
-		<h1 id="logo-text"><a href="../new site/index.php" title="">My Expenses</a></h1>		
+		<h1 id="logo-text"><a href="../my_website/index.php" title="">My Expenses</a></h1>		
 		<p id="slogan">Use as Calculator... </p>	
 		<div id="header-image"></div>
 	</div>
@@ -39,7 +39,7 @@
 	  	<div id="content-wrap">
 	    	<!-- content end -->
           	     <h2 align="center">Login Info</h2>
-				<form name="input" action="../new site/verify.php" method="post">
+				<form name="input" action="../my_website/verify.php" method="post">
     				     <table width="400" border="0" align="center">
   					<tr>
     				        <th scope="row"><h4 id="logo-text">User ID</h4></th>
@@ -70,7 +70,7 @@
 			<p>		
 				<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | 
 		   		<a href="http://validator.w3.org/check/referer">XHTML</a>	|			
-				<a href="../new site/index.php">Login Page</a>								
+				<a href="../my_website/index.php">Login Page</a>								
 			</p>
 		</div>
 	<!-- footer-bottom ends -->		
