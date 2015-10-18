@@ -24,6 +24,7 @@
 		<h1 id="logo-text"><a href="../index.php" title="">My Expenses</a></h1>		
 		<p id="slogan">Use as Calculator... </p>	
 		<div id="header-image"></div>
+                <img width="1" height="1" src="../images/logo.png"/>
 	</div>
         <!--header ends-->					
 	
