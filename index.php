@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
-	<title><img width="1" height="1" src="../image/logo.png"></title>
+	<title><img width="1" height="1" src="../images/logo.png"></title>
 
 	<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
 	<meta name="author" content="Mohammad kafee Uddin" />
