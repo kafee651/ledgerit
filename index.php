@@ -1,8 +1,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<?php
+	include('login.php'); // Includes Login Script
 
+	if(isset($_SESSION['login_user'])){
+		header("location: profile.php");
+	}
+?>
 <head>
-	<title><img width="20" height="20" src="../images/logo.png"/></title>
+	<title><img src="./images/logo.png" Ledger It></img></title>
 
 	<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
 	<meta name="author" content="Mohammad kafee Uddin" />
@@ -24,7 +30,6 @@
 		<h1 id="logo-text"><a href="../index.php" title="">My Expenses</a></h1>		
 		<p id="slogan">Use as Calculator... </p>	
 		<div id="header-image"></div>
-                <img width="20" height="20" src="../images/logo.png"/>
 	</div>
         <!--header ends-->					
 	
@@ -36,20 +41,20 @@
 	  	<div id="content-wrap">
 	    	<!-- content end -->
           	     <h2 align="center">Login Info</h2>
-				<form name="input" action="../verify.php" method="post">
+				<form name="input" action="" method="post">
     				     <table width="400" border="0" align="center">
   					<tr>
     				        <th scope="row"><h4 id="logo-text">User ID</h4></th>
-    				        <td><input type="text" name="UserID" size="20" maxlength="20" id="fname"></td>
+    				        <td><input type="text" name="username" placeholder="username" size="20" maxlength="20" id="fname"></td>
 		                        </tr>
                     
                                         <tr>
     				        <th scope="row"><h4 id="logo-text">Password</h4></th>
-    				        <td><input type="password" name="Password" size="20" maxlength="15" id="fname" value=""></td>
+    				        <td><input type="password" name="password" placeholder="**********" size="20" maxlength="15" id="fname" value=""></td>
 		  			</tr>
                              
                                         <tr>
-    				        <td align="center" colspan="2" scope ="row"><h4 id="logo-text"><input type="submit" /></td>
+    				        <td align="center" colspan="2" scope ="row"><h4 id="logo-text"><input name="submit" type="submit" value=" Login " /></td>
                                         </tr>
                     
   				      </table>
