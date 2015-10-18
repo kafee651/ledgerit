@@ -8,7 +8,7 @@
 	}
 ?>
 <head>
-	<title><img src="./images/logo.png" Ledger It></img></title>
+	<title>Ledger It></title>
 
 	<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
 	<meta name="author" content="Mohammad kafee Uddin" />
@@ -17,7 +17,7 @@
 	<meta name="robots" content="index, follow, noarchive" />
 	<meta name="googlebot" content="noarchive" />
 
-	<link rel="stylesheet" type="text/css" media="screen" href="../css/screen.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="./css/screen.css" />
 
 </head>
 
@@ -27,7 +27,7 @@
 
 	<!--header -->
 	<div id="header">			
-		<h1 id="logo-text"><a href="../index.php" title="">My Expenses</a></h1>		
+		<h1 id="logo-text"><a href="./index.php" title="">My Expenses</a></h1>		
 		<p id="slogan">Use as Calculator... </p>	
 		<div id="header-image"></div>
 	</div>
@@ -45,7 +45,7 @@
     				     <table width="400" border="0" align="center">
   					<tr>
     				        <th scope="row"><h4 id="logo-text">User ID</h4></th>
-    				        <td><input type="text" name="username" placeholder="username" size="20" maxlength="20" id="fname"></td>
+    				        <td><input type="text" name="username" placeholder="Username" size="20" maxlength="20" id="fname"></td>
 		                        </tr>
                     
                                         <tr>
@@ -65,14 +65,14 @@
 	<div id="footer-bottom">
 		<div class="bottom-left">
 			<p>
-			&copy; 2012<strong> All reight are reserve</strong>&nbsp; &nbsp; &nbsp;
-			Design by kafee</p>
+			&copy; 2015<strong> All reight are reserve</strong>&nbsp; &nbsp; &nbsp;
+			Design by Mohammad</p>
 		</div>
 		<div class="bottom-right">
 			<p>		
 				<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | 
 		   		<a href="http://validator.w3.org/check/referer">XHTML</a>	|			
-				<a href="../index.php">Login Page</a>								
+				<a href="./index.php">Login Page</a>								
 			</p>
 		</div>
 	<!-- footer-bottom ends -->		
