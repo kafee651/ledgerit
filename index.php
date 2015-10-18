@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
-	<title><img width="1" height="1" src="../images/logo.png"/></title>
+	<title><img width="5" height="5" src="../images/logo.png"/></title>
 
 	<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
 	<meta name="author" content="Mohammad kafee Uddin" />
@@ -24,7 +24,7 @@
 		<h1 id="logo-text"><a href="../index.php" title="">My Expenses</a></h1>		
 		<p id="slogan">Use as Calculator... </p>	
 		<div id="header-image"></div>
-                <img width="1" height="1" src="../images/logo.png"/>
+                <img width="5" height="5" src="../images/logo.png"/>
 	</div>
         <!--header ends-->					
 	
