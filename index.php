@@ -2,10 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
-	<title>My Expenses</title>
+	<title><img width="1" height="1" src="../image/logo.png"></title>
 
 	<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
-	<meta name="author" content="Erwin Aligam - styleshout.com" />
+	<meta name="author" content="Mohammad kafee Uddin" />
 	<meta name="description" content="Site Description Here" />
 	<meta name="keywords" content="keywords, here" />
 	<meta name="robots" content="index, follow, noarchive" />
