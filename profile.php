@@ -6,7 +6,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 	<head>
-		<title><img src="./images/logo.png" Ledger It></img></title>
+		<title><img src="./images/logo.png" Ledger It</img></title>
 
 		<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
 		<meta name="author" content="Erwin Aligam - styleshout.com" />
@@ -15,7 +15,7 @@
 		<meta name="robots" content="index, follow, noarchive" />
 		<meta name="googlebot" content="noarchive" />
 
-		<link rel="stylesheet" type="text/css" media="screen" href="../new site/css/screen.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="./css/screen.css" />
 
 	</head>
 
@@ -27,7 +27,7 @@
 		<!--header -->
 			<div id="header">			
 				
-		<h1 id="logo-text"><a href="../new site/index.php" title="">My Expenses</a></h1>		
+		<h1 id="logo-text"><a href="./index.php" title="">My Expenses</a></h1>		
 		<p id="slogan">Use as Calculator... </p>	
 	
 		<div id="header-image"></div>
@@ -45,7 +45,7 @@
    <tr>
    <td width="100%" align="center">
     <b id="welcome">Welcome : <i><?php echo $login_session; ?></i></b>
-			<b id="logout"><a href="logout.php">Log Out</a></b>
+			<b id="logout"><a href="./logout.php">Log Out</a></b>
 
    </td>
     </tr>
