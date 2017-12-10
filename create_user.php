@@ -55,7 +55,7 @@
            						<tr colspan=0><td align="Center" colspan="3"><h2 align="center">Create New User</h2></td></tr>
 							    <tr><th width="156" scope="row"><p align="left">User Name<font color="#FF0000">*</font></p></th>
            							<td width="259"><font face='Verdana' size='2'>
-           								<input size="50" maxlength="50" name="name" type="text" id="name" /></font>
+           								<input size="50" maxlength="50" name="uname" type="text" id="name" /></font>
            							</td>
            							<td width="1"><span id="msgbox1"  ></span>
            							</td>
