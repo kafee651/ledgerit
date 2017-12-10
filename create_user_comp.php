@@ -28,11 +28,11 @@
 		
 		<div  id="nav">
 			<ul>
-				<li><a href="../new site/insert.php">Insert</a></li>
-				<li><a href="../new site/search_date.php">Search</a></li>
-        <li><a href="../new site/login.php">Dashboard</a></li>
-        <li class="first" id="current"><a href="../new site/create_user.php">Create New User</a></li>
-        <li><a href="../new site/index.php">logout</a></li>		
+				<li><a href="./insert.php">Insert</a></li>
+				<li><a href="./search_date.php">Search</a></li>
+                                <li><a href="./login.php">Dashboard</a></li>
+                                <li class="first" id="current"><a href="./create_user.php">Create New User</a></li>
+                                <li><a href="./index.php">logout</a></li>		
 			</ul>		
 		</div>	
 		
