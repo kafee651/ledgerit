@@ -33,9 +33,9 @@
 			<ul>
 				<li><a href="./insert.php">Insert</a></li>
 				<li><a href="./search_date.php">Search</a></li>
-        <li class="first" id="current"><a href="./create_user.php">Create New User</a></li>
-        <li><a href="./profile.php">My Account</a></li>
-        <li><a href="./logout.php">Logout</a></li>		
+				<li><a href="./profile.php">DashBoard</a></li>
+				<li class="first" id="current"><a href="./create_user.php">Create New User</a></li>
+				<li><a href="./logout.php">Logout</a></li>		
 			</ul>		
 		</div>	
 		
@@ -47,57 +47,42 @@
 	<!-- featured starts -->
 	<!-- content -->
 	<div id="content-outer" class="clear"><div id="content-wrap">
-	
 		<div id="content">
-        <table width="400" border="0" cellspacing="0" cellpadding="0">
-   <tr>
-   <td width="100%"><form action="./create_user_comp.php" method="POST" >
-       <table width="430" height="415" border="0" align="left" >
-           <tr colspan=0>
-  	       <td align="Center" colspan="3"><h2 align="center">Create New User</h2></td></tr>
-
-        
-           
-           
-          
-           <tr>
-           <th width="156" scope="row"><p align="left">User Name<font color="#FF0000">*</font></p></th>
-           <td width="259"><font face='Verdana' size='2'>
-           <input size="50" maxlength="50" name="name" type="text" id="name" /></font>
-           </td>
-           <td width="1"><span id="msgbox1"  ></span>
-           </td>
-           </tr>
-           <tr>
-           <th width="156" scope="row"><p align="left">User Id<font color="#FF0000">*</font></p></th>
-           <td width="259"><font face='Verdana' size='2'>
-           <input size="50" maxlength="50" name="userid" type="text" id="name" /></font>
-           </td>
-           <td width="1"><span id="msgbox1"  ></span>
-           </td>
-           </tr>
-           
-           <tr>
-           <th width="156" scope="row"><p align="left">Password<font color="#FF0000">*</font></p></th>
-           <td width="259"><font face='Verdana' size='2'>
-           <input size="50" maxlength="50" name="Password" type="password" id="name" /></font>
-           </td>
-           <td width="1"><span id="msgbox1"  ></span></td>
-           </tr>
-           <tr>
-           <th height="78" colspan="3" align="left" scope="row"><font color="#FF0000">*</font>All fields are compulsory<br/>
-           <center>
-           <input type="submit" />
-           &nbsp; &nbsp; &nbsp;
-           <input type="reset" />
-           </center>
-           <br/></th>
-           </tr>
-      </table>
-      </form></td>
-    </tr>
-</table> 
-</div>	
+        		<table width="400" border="0" cellspacing="0" cellpadding="0">
+   				<tr>
+   					<td width="100%"><form action="./create_user_comp.php" method="POST" >
+       						<table width="430" height="415" border="0" align="left" >
+           						<tr colspan=0><td align="Center" colspan="3"><h2 align="center">Create New User</h2></td></tr>
+							    <tr><th width="156" scope="row"><p align="left">User Name<font color="#FF0000">*</font></p></th>
+           							<td width="259"><font face='Verdana' size='2'>
+           								<input size="50" maxlength="50" name="name" type="text" id="name" /></font>
+           							</td>
+           							<td width="1"><span id="msgbox1"  ></span>
+           							</td>
+           						</tr>
+           						<tr><th width="156" scope="row"><p align="left">User Id<font color="#FF0000">*</font></p></th>
+           							<td width="259"><font face='Verdana' size='2'>
+           								<input size="50" maxlength="50" name="userid" type="text" id="name" /></font>
+           							</td>
+           							<td width="1"><span id="msgbox1"  ></span></td>
+           						</tr>
+           						<tr><th width="156" scope="row"><p align="left">Password<font color="#FF0000">*</font></p></th>
+           							<td width="259"><font face='Verdana' size='2'>
+           								<input size="50" maxlength="50" name="Password" type="password" id="name" /></font>
+           							</td>
+           							<td width="1"><span id="msgbox1"  ></span></td>
+           						</tr>
+           						<tr><th height="78" colspan="3" align="left" scope="row"><font color="#FF0000">*</font>All fields are compulsory<br/>
+           							<center><input type="submit" />
+           									<input type="reset" />
+           							</center>
+           							<br/></th>
+           						</tr>
+      					</table>
+      				</form></td>
+    			</tr>
+			</table> 
+			</div>	
 			
 	<!-- content end -->	
 	</div></div>
@@ -109,15 +94,14 @@
 	<div id="footer-bottom">
 		<div class="bottom-left">
 			<p>
-			&copy; 2012 All rights are reserve&nbsp; &nbsp; &nbsp;
+			&copy; 2017 All rights are reserve&nbsp; &nbsp; &nbsp;
 			Design by <a href="http://www.styleshout.com/">kafee</a>
 			</p>
 		</div>
 	
 		<div class="bottom-right">
 			<p>		
-				<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | 
-		   	<a href="http://validator.w3.org/check/referer">XHTML</a>	|<a href="./index.html">Login pages</a></p>
+				<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> |<a href="http://validator.w3.org/check/referer">XHTML</a>	|<a href="./index.html">Login pages</a></p>
 		</div>
 	<!-- footer-bottom ends -->		
 	</div>
