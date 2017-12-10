@@ -3,7 +3,7 @@
 	$connection = mysql_connect("localhost", "root", "d498teaSFP2-5v");
 
 	// Selecting Database
-	$db = mysql_select_db("company", $connection);
+	$db = mysql_select_db("expenses", $connection);
 	session_start();// Starting Session
 
 	// Storing Session
