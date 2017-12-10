@@ -26,92 +26,42 @@
 	<!--header -->
 	<div id="header">			
 				
-		<h1 id="logo-text"><a href="../new site/index.php" title="">My Expenses</a></h1>		
+		<h1 id="logo-text"><a href="./index.php" title="">My Expenses</a></h1>		
 		<p id="slogan">Use as Calculator... </p>	
 		
 		<div  id="nav">
 			<ul>
-				<li><a href="../new site/insert.php">Insert</a></li>
-				<li><a href="../new site/search_date.php">Search</a></li>
-                <li class="first" id="current"><a href="../new site/create_user.php">Create New User</a></li>
-                <li><a href="../new site/login.php">My Account</a></li>
-                <li><a href="../new site/index.php">Logout</a></li>		
+				<li><a href="./insert.php">Insert</a></li>
+				<li><a href="./search_date.php">Search</a></li>
+				<li class="first" id="current"><a href="./profile.php">Deshboard</a></li>
+                		<li><a href="./create_user.php">Create New User</a></li>
+                		<li><a href="./logout.php">Logout</a></li>		
 			</ul>		
 		</div>	
 		
 		<div id="header-image"></div>
 						
 	<!--header ends-->					
-	</div>
-	<tr>
-   <td width="100%" align="center">
-	   <b id="welcome">Welcome : <i><?php echo $login_session; ?></i></b></td>
-   <td width="100%" align="center">	   
-	   <b id="logout"><a href="./logout.php">Log Out</a></b>
-
-   </td>
-	   
-   <td width="100%" align="center">	   
-	   <b id="logout"><a href="./logout.php">Log Out</a></b>
-	   </td>
 	
 	<!-- featured starts -->
 	<!-- content -->
-	<div id="content-outer" class="clear"><div id="content-wrap">
-	
-		<div id="content">
-        <table width="400" border="0" cellspacing="0" cellpadding="0">
-   <tr>
-   <td width="100%"><form action="../new site/create_user_comp.php" method="POST" >
-       <table width="430" height="415" border="0" align="left" >
-           <tr colspan=0>
-  	       <td align="Center" colspan="3"><h2 align="center">Create New User</h2></td></tr>
-
-        
-           
-           
-          
-           <tr>
-           <th width="156" scope="row"><p align="left">User Name<font color="#FF0000">*</font></p></th>
-           <td width="259"><font face='Verdana' size='2'>
-           <input size="50" maxlength="50" name="uname" type="text" id="name" /></font>
-           </td>
-           <td width="1"><span id="msgbox1"  ></span>
-           </td>
-           </tr>
-           <tr>
-           <th width="156" scope="row"><p align="left">User Id<font color="#FF0000">*</font></p></th>
-           <td width="259"><font face='Verdana' size='2'>
-           <input size="50" maxlength="50" name="userid" type="text" id="name" /></font>
-           </td>
-           <td width="1"><span id="msgbox1"  ></span>
-           </td>
-           </tr>
-           
-           <tr>
-           <th width="156" scope="row"><p align="left">Password<font color="#FF0000">*</font></p></th>
-           <td width="259"><font face='Verdana' size='2'>
-           <input size="50" maxlength="50" name="Password" type="password" id="name" /></font>
-           </td>
-           <td width="1"><span id="msgbox1"  ></span></td>
-           </tr>
-           <tr>
-           <th height="78" colspan="3" align="left" scope="row"><font color="#FF0000">*</font>All fields are compulsory<br/>
-           <center>
-           <input type="submit" />
-           &nbsp; &nbsp; &nbsp;
-           <input type="reset" />
-           </center>
-           <br/></th>
-           </tr>
-      </table>
-      </form></td>
-    </tr>
-</table> 
-</div>	
+	<div id="content-outer" class="clear">
+		<div id="content-wrap">
+			<div id="content">
+        			<table width="400" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td width="100%" align="center">
+					<b id="welcome">Welcome : <i><?php echo $login_session; ?></i></b></td>
+					<td width="100%" align="center">	   
+					<b id="logout"><a href="./logout.php">Log Out</a></b>
+					</td>
+				</tr>
+				</table> 	
+			</div>	
 			
-	<!-- content end -->	
-	</div></div>
+		<!-- content end -->	
+		</div>
+	</div>
 		
 	<!-- footer starts here -->	
 	<div id="footer-outer" class="clear"></div>
@@ -128,7 +78,7 @@
 		<div class="bottom-right">
 			<p>		
 				<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | 
-		   	<a href="http://validator.w3.org/check/referer">XHTML</a>	|<a href="file:///C|/Users/KAIFE/Desktop/FreshPick10/index.html">SiLogin pages</a></p>
+		   	<a href="http://validator.w3.org/check/referer">XHTML</a>|<a href="./index.html">Login pages</a></p>
 		</div>
 	<!-- footer-bottom ends -->		
 	</div>
@@ -138,3 +88,5 @@
 
 </body>
 </html>
+
+	
