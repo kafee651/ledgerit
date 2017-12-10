@@ -8,7 +8,7 @@
 	}
 ?>
 <head>
-	<title>Ledger It></title>
+	<title>Ledger It</title>
 
 	<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
 	<meta name="author" content="Mohammad kafee Uddin" />
@@ -65,7 +65,7 @@
 	<div id="footer-bottom">
 		<div class="bottom-left">
 			<p>
-			&copy; 2015<strong> All reight are reserve</strong>&nbsp; &nbsp; &nbsp;
+			&copy; 2017<strong> All reight are reserve</strong>&nbsp; &nbsp; &nbsp;
 			Design by Mohammad</p>
 		</div>
 		<div class="bottom-right">
