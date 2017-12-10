@@ -40,6 +40,7 @@
 		</div>	
 		
 		<div id="header-image"></div>
+	</div>
 						
 	<!--header ends-->					
 	
@@ -70,7 +71,7 @@
 	<div id="footer-bottom">
 		<div class="bottom-left">
 			<p>
-			&copy; 2012 All rights are reserve&nbsp; &nbsp; &nbsp;
+			&copy; 2017 All rights are reserve&nbsp; &nbsp; &nbsp;
 			Design by <a href="http://www.styleshout.com/">kafee</a>
 			</p>
 		</div>
