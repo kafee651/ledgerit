@@ -6,7 +6,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 	<head>
-		<title><img src="./images/logo.png" Ledger It</img></title>
+		<title>Ledger It</title>
 
 		<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
 		<meta name="author" content="Erwin Aligam - styleshout.com" />
