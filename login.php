@@ -4,6 +4,8 @@
     if (isset($_POST['submit'])) {
         if (empty($_POST['username']) || empty($_POST['password'])) {
             $error = "Username or Password is invalid";
+	    session_destroy();
+            header("location: index.php");
         }
         else{
             // Define $username and $password
@@ -26,6 +28,8 @@
                 header("location: profile.php"); // Redirecting To Other Page
             } else {
                 $error = "Username or Password is invalid";
+		session_destroy();
+		header("location: index.php");
             }
             mysql_close($connection); // Closing Connection
         }
