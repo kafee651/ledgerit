@@ -39,7 +39,7 @@
 					<div id="content-wrap">
 						<!-- content end -->
 						<h2 align="center">Login Info</h2>
-						<form name="input" action="./login.php" method="post">
+						<form name="input" action="./logina.php" method="post">
 							<table width="400" border="0" align="center">
 								<tr>
 									<th scope="row"><h4 id="logo-text">User ID</h4></th>
