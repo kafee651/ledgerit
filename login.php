@@ -34,4 +34,8 @@
             mysql_close($connection); // Closing Connection
         }
     }
+    else{
+	session_destroy();
+        header("location: index.php");
+    }
 ?>
