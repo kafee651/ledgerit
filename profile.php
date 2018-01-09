@@ -1,6 +1,6 @@
 <?php
 	if(!isset($_SESSION['login_user']))  {
-		header("location:index.php");
+		//header("location:index.php");
 	}	
 	//include('session.php');
 ?>
