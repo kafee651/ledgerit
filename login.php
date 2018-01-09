@@ -4,7 +4,7 @@
     if (isset($_POST['submit'])) {
         if (empty($_POST['username']) || empty($_POST['password'])) {
             $error = "Username or Password is invalid";
-	    session_destroy();
+	        session_destroy();
             header("location: index.php");
         }
         else{
@@ -25,11 +25,11 @@
             $rows = mysql_num_rows($query);
             if ($rows == 1) {
                 $_SESSION['login_user']=$username; // Initializing Session
-                header("location: profile.php"); // Redirecting To Other Page
+                header("location:profile.php"); // Redirecting To Other Page
             } else {
                 $error = "Username or Password is invalid";
-		session_destroy();
-		header("location: index.php");
+		        session_destroy();
+		        header("location:index.php");
             }
             mysql_close($connection); // Closing Connection
         }
