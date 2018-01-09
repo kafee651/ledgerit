@@ -1,5 +1,5 @@
 <?php
-	if($_SESSION['login_user'] == "")  {
+	if($_SESSION['login_user'] == '')  {
 		header("location:index.php");
 	}	
 	include('session.php');
