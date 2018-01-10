@@ -1,66 +1,56 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-
-<head>
-
-<title>My Expenses</title>
-
-<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
-<meta name="author" content="Erwin Aligam - styleshout.com" />
-<meta name="description" content="Site Description Here" />
-<meta name="keywords" content="keywords, here" />
-<meta name="robots" content="index, follow, noarchive" />
-<meta name="googlebot" content="noarchive" />
-
-<link rel="stylesheet" type="text/css" media="screen" href="../new site/css/screen.css" />
-
-</head>
-
-<body>
-
-<!-- wrap starts here -->
-<div id="wrap">
-
-	<!--header -->
-	<div id="header">			
-				
-		<h1 id="logo-text"><a href="../new site/index.php" title="">My Expenses</a></h1>		
-		<p id="slogan">Use as Calculator... </p>	
+    <head>
+        <title>Ledger It</title>
+        <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+        <meta name="author" content="Erwin Aligam - styleshout.com" />
+        <meta name="description" content="Site Description Here" />
+        <meta name="keywords" content="keywords, here" />
+        <meta name="robots" content="index, follow, noarchive" />
+        <meta name="googlebot" content="noarchive" />
+        <link rel="stylesheet" type="text/css" media="screen" href="./css/screen.css" />
+    </head>
+    
+    <body>
+        <!-- wrap starts here -->
+        <div id="wrap">
+            <!--header -->
+	        <div id="header">			
+				<h1 id="logo-text"><a href="./index.php" title="">My Expenses</a></h1>		
+		        <p id="slogan">Use as Calculator... </p>	
 		
-		<div  id="nav">
-			<ul>
-				<li class="first" id="current"><a href="../new site/insert.php">Insert</a></li>
-				<li><a href="../new site/search_date.php">Search</a></li>
-				<li><a href="../new site/create_user.php">Create New User</a></li>
-                <li><a href="../new site/login.php">My Account</a></li>
-                <li><a href="../new site/index.php">Logout</a></li>		
-			</ul>		
-		</div>	
+		        <div  id="nav">
+			        <ul>
+				        <li class="first" id="current"><a href="./insert.php">Insert</a></li>
+				        <li><a href="./search_date.php">Search</a></li>
+                        <li><a href="./login.php">Dashboard</a></li>
+                        <li><a href="./create_user.php">Create New User</a></li>
+                        <li><a href="./index.php">Logout</a></li>		
+			        </ul>		
+		        </div>	
 		
-		<div id="header-image"></div>
+		        <div id="header-image"></div>
 						
-	<!--header ends-->					
-	</div>
+	        <!--header ends-->					
+	        </div>
 	
-	<!-- featured starts -->
-	<!-- content -->
-	<div id="content-outer" class="clear"><div id="content-wrap">
-	
-		<div id="content">
-        <table width="400" border="0" cellspacing="0" cellpadding="0">
-   <tr>
-   <td width="100%"><form action="../new site/insert_comp.php" method="POST" >
-       <table width="529" height="415" border="0" align="left" >
-           <tr colspan=0>
-  	       <td align="Center" colspan="6"><h2 align="center">Insert Again Purchased Items</h2></td></tr>
-
-        
-           
-           
-           <tr>
-           <th scope="row" align="left">Category<font color="#FF0000">*</font></th>
-           <td colspan="4"><label>
+	        <!-- featured starts -->
+	        <!-- content -->
+	        <div id="content-outer" class="clear">
+                <div id="content-wrap">
+                    <div id="content">
+                        <table width="400" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td width="100%">
+                                    <form action="./insert_comp.php" method="POST" >
+                                        <table width="529" height="415" border="0" align="left" >
+                                            <tr colspan=0>
+  	                                            <td align="Center" colspan="6"><h2 align="center">Insert Again Purchased Items</h2>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" align="left">Category<font color="#FF0000">*</font></th>
+                                                <td colspan="4"><label>
            <select name="Cat">
            <option value="1"></option>
            <option value="Household">Household Goods</option>
@@ -213,7 +203,7 @@
 </html>
 
 <?php
-$con = mysql_connect("localhost","root","");
+$con = mysql_connect("localhost","root","d498teaSFP2-5v");
 if (!$con)
   {
   die('Could not connect: ' . mysql_error());

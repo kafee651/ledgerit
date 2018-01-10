@@ -4,7 +4,7 @@
 
 <head>
 
-<title>My Expenses</title>
+<title>Ledger It</title>
 
 <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
 <meta name="author" content="Erwin Aligam - styleshout.com" />
@@ -13,7 +13,7 @@
 <meta name="robots" content="index, follow, noarchive" />
 <meta name="googlebot" content="noarchive" />
 
-<link rel="stylesheet" type="text/css" media="screen" href="../new site/css/screen.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="./css/screen.css" />
 
 </head>
 
@@ -30,11 +30,11 @@
 		
 		<div  id="nav">
 			<ul>
-				<li><a href="../new site/insert.php">Insert</a></li>
-				<li class="first" id="current"><a href="../new site/search_date.php">Search</a></li>
-                <li><a href="../new site/create_user.php">Create New User</a></li>
-                <li><a href="../new site/login.php">My Account</a></li>	
-                <li><a href="../new site/index.php">logout</a></li>	
+				<li><a href="./insert.php">Insert</a></li>
+				<li class="first" id="current"><a href="./search_date.php">Search</a></li>
+                <li><a href="./create_user.php">Create New User</a></li>
+                <li><a href="./login.php">My Account</a></li>	
+                <li><a href="./index.php">logout</a></li>	
 			</ul>		
 		</div>	
 		
@@ -65,7 +65,7 @@
             </tr>
             
 <?php
-$con = mysql_connect("localhost","root","");
+$con = mysql_connect("localhost","root","d498teaSFP2-5v");
 if (!$con){
   die('Could not connect: ' . mysql_error());
 }

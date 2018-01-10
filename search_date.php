@@ -4,7 +4,7 @@
 
 <head>
 
-<title>My Expenses</title>
+<title>Ledger It</title>
 
 <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
 <meta name="author" content="Erwin Aligam - styleshout.com" />
