@@ -1,3 +1,9 @@
+<?php
+  session_start(); 
+	if(!$_SESSION['login_user'])  {
+		header("location:index.php");
+	}
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -30,11 +36,11 @@
 		
 		<div  id="nav">
 			<ul>
-				<li><a href="./insert.php">Insert</a></li>
-				<li class="first" id="current"><a href="./search_date.php">Search</a></li>
-				<li><a href="./create_user.php">Create New User</a></li>
-                <li><a href="./login.php">My Account</a></li>
-                <li><a href="./index.php">Logout</a></li>		
+                <li><a href="./insert.php">Insert</a></li>
+                <li class="first" id="current"><a href="./search_date.php">Search</a></li>
+                <li><a href="./profile.php">Dashboard</a></li>
+                <li><a href="./create_user.php">Create New User</a></li>
+                <li><a href="./logout.php">Logout</a></li>  		
 			</ul>		
 		</div>	
 		

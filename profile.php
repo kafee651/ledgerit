@@ -1,8 +1,8 @@
 <?php
-	if($_SESSION['login_user'] == '')  {
-		//header("location:index.php");
-	}	
-	include('session.php');
+	session_start(); 
+	if(!$_SESSION['login_user'])  {
+		header("location:index.php");
+	}
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -45,7 +45,7 @@
         				<table width="400" border="0" cellspacing="0" cellpadding="0">
 							<tr>
 								<td width="100%" align="center">
-									<b id="welcome">Welcome : <i><?php echo $login_session; ?></i></b>
+									<b id="welcome">Welcome : <i><?php echo $_SESSION['login_user']; ?></i></b>
 								</td>
 								<td width="100%" align="center">	   
 									<b id="logout"><a href="./logout.php">Log Out</a></b>

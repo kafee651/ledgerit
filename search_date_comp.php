@@ -1,3 +1,9 @@
+<?php
+  session_start(); 
+	if(!$_SESSION['login_user'])  {
+		header("location:index.php");
+	}
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -30,12 +36,12 @@
 		
 		<div  id="nav">
 			<ul>
-				<li><a href="./insert.php">Insert</a></li>
-				<li class="first" id="current"><a href="./search_date.php">Search</a></li>
+                <li><a href="./insert.php">Insert</a></li>
+                <li class="first" id="current"><a href="./search_date.php">Search</a></li>
+                <li><a href="./profile.php">Dashboard</a></li>
                 <li><a href="./create_user.php">Create New User</a></li>
-                <li><a href="./login.php">My Account</a></li>	
-                <li><a href="./index.php">logout</a></li>	
-			</ul>		
+                <li><a href="./logout.php">Logout</a></li>  		
+			</ul>	
 		</div>	
 		
 		<div id="header-image"></div>
@@ -65,7 +71,7 @@
             </tr>
             
 <?php
-$con = mysql_connect("localhost","root","d498teaSFP2-5v");
+$con = mysql_connect("localhost","root","BJvZKFKeHV6GJ+");
 if (!$con){
   die('Could not connect: ' . mysql_error());
 }
@@ -75,7 +81,7 @@ $sdate = $_POST['sD'] + $_POST['sM'] * 30 + $_POST['sY'] * 365;
 $edate = $_POST['eD'] + $_POST['eM'] * 30 + $_POST['eY'] * 365;
 switch($_POST['Cat']){
 	case 1:
-	$result = mysql_query("SELECT * FROM myexpenses WHERE UserID = 'kafee786' AND Date >= '$sdate' AND Date <= '$edate'");
+	$result = mysql_query("SELECT * FROM myexpenses WHERE UserID = '$_SESSION[login_user]' AND Date >= '$sdate' AND Date <= '$edate'");
 	while($row = mysql_fetch_array($result)){
 		echo "<tr>";
         echo "<th width='115' scope='row'> <p align='left'>$sino</p></th>";
@@ -88,7 +94,7 @@ switch($_POST['Cat']){
   	}
 	break;
 	case 2:
-	$result = mysql_query("SELECT * FROM myexpenses WHERE UserID = 'kafee786' AND Date >= '$sdate' AND Date <= '$edate' AND Cat = 'Cloth' ");
+	$result = mysql_query("SELECT * FROM myexpenses WHERE UserID ='$_SESSION[login_user]' AND Date >= '$sdate' AND Date <= '$edate' AND Cat = 'Cloth' ");
 	while($row = mysql_fetch_array($result)){
   		echo "<tr>";
         echo "<th width='115' scope='row'> <p align='left'>$sino</p></th>";
@@ -101,7 +107,7 @@ switch($_POST['Cat']){
   	}
 	break;
 	case 3:
-	$result = mysql_query("SELECT * FROM myexpenses WHERE UserID = 'kafee786' AND Date >= '$sdate' AND Date <= '$edate' AND Cat = 'Electronic' ");
+	$result = mysql_query("SELECT * FROM myexpenses WHERE UserID = '$_SESSION[login_user]' AND Date >= '$sdate' AND Date <= '$edate' AND Cat = 'Electronic' ");
 	while($row = mysql_fetch_array($result)){
   		echo "<tr>";
         echo "<th width='115' scope='row'> <p align='left'>$sino</p></th>";
@@ -114,7 +120,7 @@ switch($_POST['Cat']){
   	}
 	break;
 	case 4:
-	$result = mysql_query("SELECT * FROM myexpenses WHERE UserID = 'kafee786' AND Date >= '$sdate' AND Date <= '$edate' AND Cat = 'Household'");
+	$result = mysql_query("SELECT * FROM myexpenses WHERE UserID = '$_SESSION[login_user]' AND Date >= '$sdate' AND Date <= '$edate' AND Cat = 'Household'");
 	while($row = mysql_fetch_array($result)){
   		echo "<tr>";
         echo "<th width='115' scope='row'> <p align='left'>$sino</p></th>";
@@ -127,7 +133,7 @@ switch($_POST['Cat']){
   	}
 	break;
 	case 5:
-	$result = mysql_query("SELECT * FROM myexpenses WHERE UserID = 'kafee786' AND Date >= '$sdate' AND Date <= '$edate' AND Cat = 'Vehicle' ");
+	$result = mysql_query("SELECT * FROM myexpenses WHERE UserID = '$_SESSION[login_user]' AND Date >= '$sdate' AND Date <= '$edate' AND Cat = 'Vehicle' ");
 	while($row = mysql_fetch_array($result)){
   		echo "<tr>";
         echo "<th width='115' scope='row'> <p align='left'>$sino</p></th>";
@@ -144,7 +150,7 @@ switch($_POST['Cat']){
 mysql_close($con);
 ?>
 <?php
-$con = mysql_connect("localhost","root","");
+$con = mysql_connect("localhost","root","BJvZKFKeHV6GJ+");
 if (!$con){
   die('Could not connect: ' . mysql_error());
 }
@@ -153,7 +159,7 @@ $sdate = $_POST['sD'] + $_POST['sM'] * 30 + $_POST['sY'] * 365;
 $edate = $_POST['eD'] + $_POST['eM'] * 30 + $_POST['eY'] * 365;
 switch($_POST['Cat']){
 	case 1:
-	$result = mysql_query("SELECT SUM(Price) AS sum FROM myexpenses WHERE UserID = 'kafee786' AND Date >= '$sdate' AND Date <= '$edate'");
+	$result = mysql_query("SELECT SUM(Price) AS sum FROM myexpenses WHERE UserID = '$_SESSION[login_user]' AND Date >= '$sdate' AND Date <= '$edate'");
 	while($row = mysql_fetch_array($result)){
 		echo "<tr>";
         echo "<th width='115' scope='row'> <p align='left'>Grand Total</p></th>";
@@ -163,7 +169,7 @@ switch($_POST['Cat']){
   	}
 	break;
 	case 2:
-	$result = mysql_query("SELECT SUM(Price) AS sum FROM myexpenses WHERE UserID = 'kafee786' AND Date >= '$sdate' AND Date <= '$edate' AND Cat = 'Cloth' ");
+	$result = mysql_query("SELECT SUM(Price) AS sum FROM myexpenses WHERE UserID = '$_SESSION[login_user]' AND Date >= '$sdate' AND Date <= '$edate' AND Cat = 'Cloth' ");
 	while($row = mysql_fetch_array($result)){
   		echo "<tr>";
         echo "<th width='115' scope='row'> <p align='left'>Grand Total</p></th>";
@@ -173,7 +179,7 @@ switch($_POST['Cat']){
   	}
 	break;
 	case 3:
-	$result = mysql_query("SELECT SUM(Price) AS sum FROM myexpenses WHERE UserID = 'kafee786' AND Date >= '$sdate' AND Date <= '$edate' AND Cat = 'Electronic' ");
+	$result = mysql_query("SELECT SUM(Price) AS sum FROM myexpenses WHERE UserID = '$_SESSION[login_user]' AND Date >= '$sdate' AND Date <= '$edate' AND Cat = 'Electronic' ");
 	while($row = mysql_fetch_array($result)){
 		echo "<tr>";
         echo "<th width='115' scope='row'> <p align='left'>Grand Total</p></th>";
@@ -183,7 +189,7 @@ switch($_POST['Cat']){
   	}
 	break;
 	case 4:
-	$result = mysql_query("SELECT SUM(Price) AS sum FROM myexpenses WHERE UserID = 'kafee786' AND Date >= '$sdate' AND Date <= '$edate' AND Cat = 'Household'");
+	$result = mysql_query("SELECT SUM(Price) AS sum FROM myexpenses WHERE UserID = '$_SESSION[login_user]' AND Date >= '$sdate' AND Date <= '$edate' AND Cat = 'Household'");
 	while($row = mysql_fetch_array($result)){
   		echo "<tr>";
         echo "<th width='115' scope='row'> <p align='left'>Grand Total</p></th>";
@@ -193,7 +199,7 @@ switch($_POST['Cat']){
   	}
 	break;
 	case 5:
-	$result = mysql_query("SELECT SUM(Price) AS sum FROM myexpenses WHERE UserID = 'kafee786' AND Date >= '$sdate' AND Date <= '$edate' AND Cat = 'Vehicle' ");
+	$result = mysql_query("SELECT SUM(Price) AS sum FROM myexpenses WHERE UserID = '$_SESSION[login_user]' AND Date >= '$sdate' AND Date <= '$edate' AND Cat = 'Vehicle' ");
 	while($row = mysql_fetch_array($result)){
   		echo "<tr>";
         echo "<th width='115' scope='row'> <p align='left'>Grand Total</p></th>";

@@ -1,6 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<?php
+		session_start(); 
 		if(isset($_SESSION['login_user'])){
 			header("location:profile.php");
 		}
@@ -39,7 +40,7 @@
 					<div id="content-wrap">
 						<!-- content end -->
 						<h2 align="center">Login Info</h2>
-						<form name="input" action="./login.php" method="post">
+						<form name="input" action="./login.php" method="POST">
 							<table width="400" border="0" align="center">
 								<tr>
 									<th scope="row"><h4 id="logo-text">User ID</h4></th>
@@ -60,7 +61,7 @@
 				<!-- footer-bottom starts -->		
 				<div id="footer-bottom">
 					<div class="bottom-left">
-						<p>&copy; 2017<strong>All reight are reserve</strong>&nbsp; &nbsp; &nbsp;Design by Mohammad</p>
+						<p>&copy; 2018<strong>All reight are reserve</strong>&nbsp; &nbsp; &nbsp;Design by Mohammad</p>
 					</div>
 					<div class="bottom-right">
 					<p>		

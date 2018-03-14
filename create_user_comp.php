@@ -1,5 +1,8 @@
 <?php
-	include('session.php');
+  session_start(); 
+	if(!$_SESSION['login_user'])  {
+		header("location:index.php");
+	}
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -28,11 +31,11 @@
 		
 		<div  id="nav">
 			<ul>
-				<li><a href="./insert.php">Insert</a></li>
+        <li><a href="./insert.php">Insert</a></li>
 				<li><a href="./search_date.php">Search</a></li>
-                                <li><a href="./login.php">Dashboard</a></li>
-                                <li class="first" id="current"><a href="./create_user.php">Create New User</a></li>
-                                <li><a href="./index.php">logout</a></li>		
+				<li><a href="./profile.php">DashBoard</a></li>
+				<li class="first" id="current"><a href="./create_user.php">Create New User</a></li>
+				<li><a href="./logout.php">Logout</a></li>
 			</ul>		
 		</div>	
 		
@@ -80,12 +83,12 @@
               </tr>
               <tr><td height="78" colspan="3" align="center" scope="row"><font color="FF0000"></font>
               <?php
-                  $con = mysql_connect("localhost","root","d498teaSFP2-5v");
+                  $con = mysql_connect("localhost","root","BJvZKFKeHV6GJ+");
                   if (!$con){
                       die('Could not connect: ' . mysql_error());
                   }
                   mysql_select_db("expenses", $con);
-                  $sql="INSERT INTO profile (name, UserID, Password) VALUES ('$_POST[uname]','$_POST[userid]','$_POST[Password]')";
+                  $sql="INSERT INTO profile (name, userid, password) VALUES ('$_POST[uname]','$_POST[userid]','$_POST[Password]')";
                   if (!mysql_query($sql,$con)){
                       die('Error: ' . mysql_error());
                   }
